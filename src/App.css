@@ -16,10 +16,11 @@ h2 {
 
 .section-header {
   width: 100%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .article-box {
-  height: 380px;
   max-width: 455px;
   position: relative;
   border: 2px solid white;

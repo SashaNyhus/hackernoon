@@ -1,10 +1,9 @@
 import {Article} from './article.js';
-import {hackerNoonArticles} from './hackerNoonArticles.js'
 export function Section(props){
-    let SectionsJSX = props.SectionData.map(MakeArticle);
+    let ArticlesJSX = props.sectionData.map(MakeArticle);
     return <div className="section-box">
-        <h1 className="section-header">Programming</h1>
-        {SectionsJSX}
+        <h1 className="section-header" id={props.sectionName}>{props.sectionName}</h1>
+        {ArticlesJSX}
     </div>
 }
 

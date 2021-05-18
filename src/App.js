@@ -1,12 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import Article from './modules/article.js'
 import {hackerNoonArticles} from './modules/hackerNoonArticles.js'
 import {Section} from './modules/section.js'  
 
 function App() {
-  Section.defaultProps = hackerNoonArticles.Programming;
-  return <Section SectionData={hackerNoonArticles.Programming}/>;
+  let SectionsJSX = MakeSectionsJSX(hackerNoonArticles)
+  return SectionsJSX;
+}
+
+function MakeSectionsJSX(hackerNoonData){
+  let keysArray = Object.keys(hackerNoonData);
+  let sectionsArray = keysArray.map(sectionKey => {
+    return <Section sectionName={sectionKey} sectionData={hackerNoonData[sectionKey]} />
+  })
+  return sectionsArray;
 }
 
 export default App;
