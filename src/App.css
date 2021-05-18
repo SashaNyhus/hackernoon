@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: rgb(33, 36, 40);
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article-box {
+  height: 380px;
+  max-width: 455px;
+  position: relative;
+  border: 2px solid white;
+}
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tag {
+  position: absolute;
+  top: 180px;
+  right: 15px;
+  width: fit-content;
+  padding: 12px;
+  background-color: rgb(33, 36, 40);
+  border: 2px solid white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.data-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  align-content: ;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.author-profile {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.times-box {
+  margin-right: 15px;
+  text-align: right;
 }
