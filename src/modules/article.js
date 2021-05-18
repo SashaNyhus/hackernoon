@@ -1,21 +1,24 @@
-export default function Article(){
-    return <div class="article-box">
-        <h2>Article Title</h2>
-        <div class="image-box">
-            <img class="article-img" src="images/default-image.jpeg" />
+export default function Article(props){
+    console.log(props.titleLink);
+    return <div className="article-box">
+        <h2>{props.titleText}</h2>
+        <div className="image-box">
+            <a href={props.titleLink}>
+                <img className="article-img" src="images/default-image.jpeg" alt={props.titleText}/>
+            </a>
         </div>
-        <div class="tag">#programming</div>
-        <div class="data-box">
-            <div class="author-box">
-                <img class="author-profile" src="https://hackernoon.com/images/HzWefNlq2pZkZcUGS9ud2aXzUkd2-p103304.jpeg"/>
-                <div class="author-text">
-                    <h3>@author</h3>
-                    <h4>Author Name</h4>
+        <div className="tag">{props.hashTag}</div>
+        <div className="data-box">
+            <div className="author-box">
+                <img className="author-profile" src={props.avatarSrc} alt=""/>
+                <div className="author-text">
+                    <h3>{props.userName}</h3>
+                    <h4>{props.author}</h4>
                 </div>
             </div>
-            <div class="times-box">
-                <p>2min read</p>
-                <p>12 hours ago</p>
+            <div className="times-box">
+                <p>{props.readIn}</p>
+                <p>{props.posted}</p>
             </div>
         </div>
     </div>;

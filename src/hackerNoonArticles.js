@@ -1,4 +1,4 @@
-export default {
+export const hackerNoonArticles = {
     "Programming": [
         {
             "titleText": "Step-by-Step Guide on How to Work with the Velo Code Panel",
