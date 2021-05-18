@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Article from './modules/article.js'
-import {hackerNoonArticles} from './hackerNoonArticles.js'
+import {hackerNoonArticles} from './modules/hackerNoonArticles.js'
+import {Section} from './modules/section.js'  
 
 function App() {
-  Article.defaultProps = hackerNoonArticles.Programming[1];
-  return <Article />;
+  Section.defaultProps = hackerNoonArticles.Programming;
+  return <Section SectionData={hackerNoonArticles.Programming}/>;
 }
 
 export default App;

@@ -9,6 +9,15 @@ h2 {
   padding-left: 15px;
 }
 
+.section-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-header {
+  width: 100%;
+}
+
 .article-box {
   height: 380px;
   max-width: 455px;
