@@ -5,6 +5,7 @@ export function Footer(props){
     let FooterJSX = footerNamesArray.map(FooterSection);
     return <div className="footer-box">
     {FooterJSX}
+    <a href="https://hackernoon.com/" className="hackernoon-link">Join HackerNoon</a>
     </div>
 }
 
