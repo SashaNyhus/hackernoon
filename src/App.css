@@ -4,6 +4,37 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  height: 60px;
+  background-color: rgb(0, 187, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > img {
+  height: 100%;
+}
+
+header > input {
+  height: 41px;
+  width: 246px;
+  border: none;
+  padding: 0 10px;
+  color: rgb(0, 255, 0);
+  background-color: rgb(0, 59, 0);
+  font-size: 20px;
+}
+
+header > button {
+  border: 1px solid black;
+  background-color: transparent;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 h2 {
   font-family: 'Courier New', Courier, monospace;
   padding-left: 15px;
