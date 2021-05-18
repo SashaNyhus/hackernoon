@@ -1,12 +1,14 @@
 import './App.css';
-import {hackerNoonArticles} from './modules/hackerNoonArticles.js'
-import {Header} from './modules/header.js'
-import {Section} from './modules/section.js'  
+import {hackerNoonArticles} from './modules/hackerNoonArticles.js';
+import {Header} from './modules/header.js';
+import {SubNav} from './modules/sub-nav.js'
+import {Section} from './modules/section.js'  ;
 
 function App() {
   let SectionsJSX = MakeSectionsJSX(hackerNoonArticles)
   return <div>
     <Header />
+    <SubNav hackerNoonData={hackerNoonArticles} />
     {SectionsJSX}
   </div>
 }
